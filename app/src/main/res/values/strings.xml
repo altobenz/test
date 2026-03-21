@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Suica残高</string>
+    <string name="widget_no_data">---</string>
+    <string name="nfc_reader_title">Suicaをかざしてください</string>
+    <string name="nfc_reading">読み取り中…</string>
+    <string name="nfc_success">残高: %s</string>
+    <string name="nfc_error">読み取りに失敗しました</string>
+    <string name="nfc_not_available">NFC非対応の端末です</string>
+</resources>
