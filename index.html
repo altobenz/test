@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fbfbfd" />
+  <meta name="description" content="シンプルで美しいじゃんけんゲーム。コンピューターと対戦しよう。" />
+  <title>じゃんけん — Janken</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1 class="title">じゃんけん</h1>
+      <p class="subtitle">コンピューターと勝負しよう</p>
+    </header>
+
+    <section class="scoreboard" aria-label="スコア">
+      <div class="score">
+        <span class="score-label">あなた</span>
+        <span class="score-value" id="playerScore">0</span>
+      </div>
+      <div class="score-divider"></div>
+      <div class="score">
+        <span class="score-label">CPU</span>
+        <span class="score-value" id="cpuScore">0</span>
+      </div>
+    </section>
+
+    <section class="arena" aria-live="polite">
+      <div class="hand-card" id="playerHand">
+        <span class="hand-emoji" id="playerEmoji">✊</span>
+        <span class="hand-name" id="playerName">あなた</span>
+      </div>
+
+      <div class="versus" id="versus">VS</div>
+
+      <div class="hand-card" id="cpuHand">
+        <span class="hand-emoji" id="cpuEmoji">✊</span>
+        <span class="hand-name" id="cpuName">CPU</span>
+      </div>
+    </section>
+
+    <p class="result" id="result">手を選んでください</p>
+
+    <section class="controls" aria-label="手を選ぶ">
+      <button class="choice" data-choice="rock" aria-label="グー">
+        <span class="choice-emoji">✊</span>
+        <span class="choice-label">グー</span>
+      </button>
+      <button class="choice" data-choice="scissors" aria-label="チョキ">
+        <span class="choice-emoji">✌️</span>
+        <span class="choice-label">チョキ</span>
+      </button>
+      <button class="choice" data-choice="paper" aria-label="パー">
+        <span class="choice-emoji">✋</span>
+        <span class="choice-label">パー</span>
+      </button>
+    </section>
+
+    <button class="reset" id="reset">リセット</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
